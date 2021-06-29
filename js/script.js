@@ -9,5 +9,22 @@ const app = new Vue({
         ],
         newTask: "",
     },
+    mounted() {
+        this.autofocus();
+    },
+    methods: {
+        autofocus: function() {
+            const element = document.getElementById("newTaskElement");
+            element.focus()
+        },
+        addTask: function() {
+            this.list.push(this.newTask);
+            this.newTask = "";
+            this.autofocus();
+        },
+        deleteTask: function(index) {
+            this.list.splice(index, 1)
+        }
+    },
 
 });

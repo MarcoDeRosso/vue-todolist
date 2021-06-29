@@ -1,0 +1,47 @@
+ul {
+    list-style: none;
+}
+
+.logo {
+    width: 100%;
+}
+
+#neTaskElemnt {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-area button {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.list-area {
+    background: #f5f7f7;
+}
+
+.list-area li {
+    height: 36px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-area li i {
+    cursor: pointer;
+}
+
+.list-area li:hover {
+    background-color: #fff;
+}
+
+.list-area li:first-child {
+    margin-top: 24px;
+}
+
+.list-area li:last-child {
+    margin-bottom: 24px;
+}
