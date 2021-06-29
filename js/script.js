@@ -18,7 +18,9 @@ const app = new Vue({
             element.focus()
         },
         addTask: function() {
-            this.list.push(this.newTask);
+            if (this.newTask.trim() !== "") {
+                this.list.push(this.newTask);
+            }
             this.newTask = "";
             this.autofocus();
         },
